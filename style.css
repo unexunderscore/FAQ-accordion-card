@@ -1,12 +1,12 @@
 html {
-    height: 100%;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body {
-background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-background-repeat: no-repeat;
-margin-top: 8rem;
 
+margin-top: 8rem;
 }
 
 .container{
@@ -26,33 +26,46 @@ margin-top: 8rem;
 .card {
     display: flex;
     justify-content: flex-end;
+    height: 32rem;
+    
 }
 
-.left{
-   
+.left {
+    overflow: hidden;
+    height: 100%;
+    
 }
 .right{
-    width: 50%;
-    
+    width: 100%;
+      
 }
 .illu-woman {
-    position: absolute;
-    top: 13rem;
-    left: 12rem;
-    z-index: 0;
-    
+    position: relative;
+    top: 4rem;
+    left: -5rem;
+}
+
+.box-container{
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .box-icon {
-    position: absolute;
-    top: 21rem;
-    left: 11rem;
-    z-index: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 12.5rem;
+    left: -5.82rem;
+    z-index: 50;
+    
 }
 
 .box-shadow {
-    position: absolute;
-    top: -10rem;
-    left: -20rem;
-    z-index: 0;
+    position: relative;
+    top: -42rem;
+    left: -35rem;
+    
+    
 }
