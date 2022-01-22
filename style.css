@@ -10,6 +10,12 @@ body {
 margin-top: 8rem;
 }
 
+p {
+    margin-top: 0;
+}
+
+
+
 .container{
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -101,9 +107,13 @@ h1{
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
+  .active {
     font-weight: bold;
     color: hsl(238, 29%, 16%);
+  }
+
+  .collapsible:hover{
+      color:hsl(14, 88%, 65%);
   }
   
   /* Style the collapsible content. Note: hidden by default */
@@ -130,4 +140,70 @@ h1{
   
   .active:after {
     content: url(./images/icon-arrow-up.png);
+  }
+
+  .illu-woman-mobil{
+    display: none;
+  }
+
+  .box-shadow-mobil{
+      display: none;
+  }
+
+  @media screen and (max-width: 375px) {
+    .box-container{
+        display: none;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        margin-left: 1rem;
+        width: 100%;
+    }
+    .container{
+        width: 21rem;
+        height: 35rem;
+    }
+    .card{
+       
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    hr {
+       width: 85%;
+    }
+
+    .collapsible{
+        width: 90%;
+        margin-left: 0.5rem;
+        margin-right: 0;
+    }
+
+    .content p {
+        margin-top: 0;
+    }
+
+    h1{
+        text-align: center;
+        margin: 6rem 0 2rem 0;
+    }
+
+    .illu-woman-mobil{
+        display:block;
+        position: fixed;
+        top: 1.8rem;
+        left: 5rem;
+        width: 60%;
+    
+    }
+
+    .box-shadow-mobil{
+        display: flex;
+        position: absolute;
+        top: 8rem;
+        left: 5rem;
+        width: 60%;
+    }
   }

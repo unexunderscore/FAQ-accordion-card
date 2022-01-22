@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-  
+  <link rel="stylesheet" href="/style.css">
 
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
@@ -16,6 +15,9 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: white; }
+    .attribution a:hover {font-weight: bold;}
+  </style>
+</head>    
   </style>
 </head>
 <body>
@@ -25,11 +27,14 @@
   <div class="card">
 
     <div class="box-container">
+      
       <img src="./images/illustration-box-desktop.svg" alt="Picture of box" class="box-icon">
     </div>
-
+    <img src="./images/bg-pattern-mobile.svg" alt="" class="box-shadow-mobil">
+    <img src="./images/illustration-woman-online-mobile.svg" alt="Illustration, a woman use some display to send a email." class="illu-woman-mobil">
     <div class="left">
       <img src="./images/illustration-woman-online-desktop.svg" alt="Illustration, a woman use some display to send a email." class="illu-woman">
+      
       <img src="./images/bg-pattern-desktop.svg" alt="Shadow of the box" class="box-shadow">
     </div>
     
@@ -39,7 +44,7 @@
 
     
     <h1>FAQ</h1>
-    
+    <div id="faq">
     <button type="button" class="collapsible">How many team members can I invite?</button>
     <div class="content">
     <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
@@ -67,7 +72,7 @@
     <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
     </div> 
     <hr>
-  
+  </div>
   </div>
 
   </div>
